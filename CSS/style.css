@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:white;
+    margin: 0;
+}
+
+a:active, a:link, a:visited {
+    text-decoration: none;
+}
+
+.barraNavegacion, .menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.barraNavegacion {
+    height: 2.5em;
+    padding: 0 2em;
+    margin: 0;
+}
+
+.redes, .acciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.icono {
+    padding: 0 .2em;
+    transition: 0.3s;
+    text-decoration: none;
+    color:white;
+}
+
+.icono:hover{
+    color:rgb(4, 0, 255);
+    transition: 0.3s;
+}
+
+.menu {    
+    height: 4em;
+    padding: 0 2em;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+#contraido {
+    position: relative;
+    visibility: visible;
+    top: .5em;
+}
+
+#desplegado {
+    position: relative;
+    visibility: hidden;
+    bottom: 1.75em;
+}
+
+#desplegable {
+    position: relative;
+    background-color: white;
+    padding: 0 1em;
+    top:-60px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+#desplegable h3{
+    text-decoration: none;
+    color: black;
+    margin: 0.5em 0;
+    text-align: left;
+}
+
+.acordion {
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+#vinculos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    transition: .3s;
+}
+
+#imagenVinculoHombre {
+    width: 100%;
+}
+
+#imagenVinculoHombre:hover {
+    width: 120%;
+}
+
+#imagenVinculoMujer {
+    width: 100%;
+}
+
+#imagenVinculoMujer:hover {
+    width: 120%;
+}
+
+#imagenVinculoColegial {
+    width: 100%;
+}
+
+#imagenVinculoColegial:hover {
+    width: 120%;
+}
+
+.banners img{
+    width: 100%;
+    padding-top: 1em;
+}
+
+.linkRedes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+.imagen{
+    width: 100%;
+}
+
+footer {
+    padding: 3em 2em;
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.datos{
+    padding-top: 1em;
+}
+
+.datos a{
+    color: white;
+    text-decoration: none;
+}
+
+.newsletter h3{
+    align-items: center;
+    margin-top: 0;
+}
+
+.datos ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsletter{
+    padding-top: .5em;
+}
+
+.divisor {
+    margin: 1.5em 0;
+}
+.copyright{
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+/*----------- Secciones ------------*/
+
